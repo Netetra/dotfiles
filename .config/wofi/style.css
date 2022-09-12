@@ -1,0 +1,40 @@
+window {
+    background-color: rgb(52, 52, 52);
+    border-radius: 16px;
+}
+
+#input {
+    margin: 16px;
+    border-radius: 16px;
+    background-color: rgb(255, 255, 255);
+}
+
+#inner-box {
+    background-color: rgb(52, 52, 52);
+}
+
+#outer-box {
+    margin: 5px;
+    padding: 20px;
+    background-color: rgb(52, 52, 52);
+}
+
+#scroll {
+}
+
+#text {
+    padding: 5px;
+    color: rgb(255, 255, 255);
+}
+
+#entry:nth-child(even) {
+    background-color: rgb(56, 56, 56);
+    border-radius: 16px;
+}
+
+#entry:selected {
+    background-color: rgb(79, 79, 79);
+}
+
+#text:selected {
+}

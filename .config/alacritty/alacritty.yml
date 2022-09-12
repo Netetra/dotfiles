@@ -1,0 +1,26 @@
+shell:
+    program: /bin/zsh
+    args:
+        - -c
+        - "/usr/bin/tmux a -t 0 || /usr/bin/tmux"
+
+font:
+    size: 6
+env:
+    TERM: alacritty
+
+mouse:
+    hide_when_typing: false
+    hints:
+        launcher: open
+        modifiers: None
+
+selection:
+    save_to_clipboard: true
+
+window:
+    decorations: full
+    dynamic_title: true
+    startup_mode: Windowed
+
+live_config_reload: true
