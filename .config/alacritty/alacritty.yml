@@ -1,3 +1,6 @@
+import:
+    - ~/.alacritty-colorscheme/themes/cyber_punk_neon.yaml
+
 shell:
     program: /bin/zsh
     args:

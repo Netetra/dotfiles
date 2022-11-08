@@ -10,11 +10,7 @@ set $term ~/.cargo/bin/alacritty
 
 set $menu wofi --show run | xargs swaymsg exec
 
-output * bg ~/.background/1.png fill
-
-# back light
-bindsym $mod+f12 exec light -As "sysfs/backlight/amdgpu_bl0" 10
-bindsym $mod+f11 exec light -Us "sysfs/backlight/amdgpu_bl0" 10
+output * bg ~/.background/default.png fill
 
 bindsym $mod+Return exec $term
 bindsym $mod+Shift+q kill
