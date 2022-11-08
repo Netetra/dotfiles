@@ -19,8 +19,10 @@ fi
 LANG=ja_JP.UTF-8
 HISTSIZE=1000
 SAVEHIST=10000
+SHELDON_CONFIG_DIR=/home/tetra/.sheldon
+SHELDON_DATA_DIR=/home/tetra/.sheldon
 
-export LANG HISTSIZE SAVEHIST
+export LANG HISTSIZE SAVEHIST SHELDON_CONFIG_DIR SHELDON_DATA_DIR
 
 setopt print_eight_bit
 setopt correct
