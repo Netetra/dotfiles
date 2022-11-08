@@ -1,0 +1,35 @@
+version = "0.7.0"
+home = "/home/tetra"
+config_dir = "/home/tetra/.sheldon"
+data_dir = "/home/tetra/.sheldon"
+config_file = "/home/tetra/.sheldon/plugins.toml"
+
+[[plugins]]
+name = "zsh-autosuggestions"
+source_dir = "/home/tetra/.sheldon/repos/github.com/zsh-users/zsh-autosuggestions"
+files = ["/home/tetra/.sheldon/repos/github.com/zsh-users/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh"]
+apply = ["source"]
+
+[[plugins]]
+name = "zsh-completions"
+source_dir = "/home/tetra/.sheldon/repos/github.com/zsh-users/zsh-completions"
+files = ["/home/tetra/.sheldon/repos/github.com/zsh-users/zsh-completions/zsh-completions.plugin.zsh"]
+apply = ["source"]
+
+[[plugins]]
+name = "zsh-syntax-highlighting"
+source_dir = "/home/tetra/.sheldon/repos/github.com/zsh-users/zsh-syntax-highlighting"
+files = ["/home/tetra/.sheldon/repos/github.com/zsh-users/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh"]
+apply = ["source"]
+
+[[plugins]]
+name = "powerlevel10k"
+source_dir = "/home/tetra/.sheldon/repos/github.com/romkatv/powerlevel10k"
+files = ["/home/tetra/.sheldon/repos/github.com/romkatv/powerlevel10k/powerlevel10k.zsh-theme"]
+apply = ["source"]
+
+[templates]
+PATH = "export PATH=\"{{ dir }}:$PATH\""
+path = "path=( \"{{ dir }}\" $path )"
+fpath = "fpath=( \"{{ dir }}\" $fpath )"
+source = "{% for file in files %}source \"{{ file }}\"\n{% endfor %}"

@@ -6,7 +6,7 @@
 
 window#waybar {
     background-color: rgba(43, 48, 59, 255);
-    border-bottom: 1px solid rgba(100, 114, 125, 0.5);
+    border-bottom: 0px solid rgba( 0, 0, 0, 0);
     color: #ffffff;
     transition-property: background-color;
     transition-duration: .5s;
@@ -25,14 +25,14 @@ window#waybar.solo {
 }
 */
 
-window#waybar.termite {
+/*window#waybar.termite {
     background-color: #3F3F3F;
 }
 
 window#waybar.chromium {
     background-color: #000000;
     border: none;
-}
+}*/
 
 #workspaces button {
     padding: 0 5px;
@@ -61,7 +61,7 @@ window#waybar.chromium {
 }
 
 #mode {
-    background-color: #64727D;
+    background-color: #ff6a6a;
     border-bottom: 3px solid #ffffff;
 }
 
@@ -102,22 +102,21 @@ window#waybar.chromium {
     margin-right: 0;
 }
 
-#clock {
+/*#clock {
     margin: 3px;
     border-radius : 16px;
     background-color: #d98d00;
-}
+}*/
 
 #battery {
     margin: 3px;
     border-radius : 16px;
-    background-color: #00a971;
-    color: #000000;
+    background-color: #27bd65;
+    color: #ffffff;
 }
 
 #battery.charging, #battery.plugged {
     color: #ffffff;
-    background-color: #00a971;
 }
 
 @keyframes blink {
@@ -142,57 +141,62 @@ label:focus {
 }
 
 #cpu {
-    margin-left: 3px;
     margin-top: 3px;
     margin-bottom: 3px;
-    padding-right: 5px;
-    border-top-left-radius : 16px;
-    border-bottom-left-radius : 16px;
-    background-color: #9b59b6;
-    color: #000000;
+    padding-left: 0px;
+    background-color: #6171fe;
+    border-radius: 0px;
+    color: #ffffff;
 }
 
 #memory {
     margin-right: 3px;
     margin-top: 3px;
     margin-bottom: 3px;
-    padding-left: 5px;
+    padding-left: 0px;
     border-top-right-radius : 16px;
     border-bottom-right-radius : 16px;
-    background-color: #9b59b6;
+    border-top-left-radius : 0px;
+    border-bottom-left-radius : 0px;
+    background-color: #6171fe;
 }
 
 #network {
-    margin: 3px;
-    border-radius : 16px;
-    background-color: #2980b9;
+    margin-left: 3px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    padding-right: 5px;
+    border-top-right-radius : 0px;
+    border-bottom-right-radius : 0px;
+    border-top-left-radius : 16px;
+    border-bottom-left-radius : 16px;
+    background-color: #6171fe;
 }
 
 #network.disconnected {
-    background-color: #f53c3c;
 }
 
 #pulseaudio {
-    margin: 3px;
-    border-radius : 16px;
-    background-color: #ecff6e;
-    color: #000000;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    padding-left: 5px;
+    background-color: #6171fe;
+    color: #ffffff;
+    border-radius: 0px;
 }
 
 #pulseaudio.muted {
-    background-color: #90b1b1;
-    color: #2a5c45;
 }
 
 #custom-media.custom-vlc {
     background-color: #ffa000;
 }
 
-#tray {
+/*#tray {
     margin: 3px;
     border-radius : 16px;
-    background-color: #2980b9;
-}
+    background-color: #a768ff;
+}*/
 
 #tray > .passive {
     -gtk-icon-effect: dim;
