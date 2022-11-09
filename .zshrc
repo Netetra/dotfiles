@@ -42,7 +42,5 @@ if [ -z $DISPLAY ] && [ $TTY = "/dev/tty1" ]; then
     exec sway
 fi
 
+source ~/git/powerlevel10k/powerlevel10k.zsh-theme
 eval "$(sheldon source)"
-
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

@@ -21,6 +21,7 @@ git clone https://github.com/eendroroy/alacritty-theme.git ~/.alacritty-colorsch
 mkdir ~/git
 cd git
 git clone https://github.com/Netetra/dotfiles.git
+git clone https://github.com/romkatv/powerlevel10k.git powerlevel10k
 cd ~
 
 #Create SymbolicLink
