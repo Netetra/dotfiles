@@ -6,7 +6,8 @@ exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DE
 
 set $mod Mod4
 
-set $term ~/.cargo/bin/alacritty
+#set $term ~/.cargo/bin/alacritty
+set $term foot
 
 set $menu wofi --show run | xargs swaymsg exec
 
