@@ -1,22 +1,3 @@
-# Rust Setup
-echo "Installing Rust stable..."
-rustup default stable > /dev/null
-echo "Installing Rust tools... "
-rustup component add clippy rls rust-analysis rust-src rust-docs rustfmt > /dev/null
-
-# Install Sheldon
-echo "Installing sheldon..."
-cargo install sheldon > /dev/null
-ln -s ~/.cargo/bin/sheldon /usr/local/bin/sheldon
-sheldon init --shell zsh
-eval "$(sheldon source)"
-
-# Install Alacritty
-cargo install alacritty
-ln -s ~/.cargo/bin/alacritty /usr/local/bin/alacritty
-mkdir ~/.alacritty-colorscheme
-git clone https://github.com/eendroroy/alacritty-theme.git ~/.alacritty-colorscheme
-
 # Clone dotfiles
 mkdir ~/git
 cd git
