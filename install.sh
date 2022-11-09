@@ -29,3 +29,4 @@ ln -s ~/git/dotfiles/.tmux.conf ~/.tmux.conf
 ln -s ~/git/dotfiles/.config ~/.config
 ln -s ~/git/dotfiles/.sheldon ~/.sheldon
 ln -s ~/git/dotfiles/.background ~/.background
+ln -s ~/.cargo/alacritty/ /usr/local/bin/alacritty
