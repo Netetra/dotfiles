@@ -12,10 +12,8 @@ eval "$(sheldon source)"
 
 # Install Alacritty
 cargo install alacritty
+mkdir ~/.alacritty-colorscheme
 git clone https://github.com/eendroroy/alacritty-theme.git ~/.alacritty-colorscheme
-
-# Python Setup
-
 
 # Clone dotfiles
 mkdir ~/git
