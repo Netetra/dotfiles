@@ -23,8 +23,8 @@ echo "Installing sheldon..."
 sheldon init --shell zsh
 
 # Install Alacritty
+echo "Installing Alacritty..."
 cargo install alacritty
-sudo ln -s ~/.cargo/bin/alacritty /usr/local/bin/alacritty
 mkdir ~/.alacritty-colorscheme
 git clone https://github.com/eendroroy/alacritty-theme.git ~/.alacritty-colorscheme
 
