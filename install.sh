@@ -19,8 +19,9 @@ git clone https://github.com/eendroroy/alacritty-theme.git ~/.alacritty-colorsch
 
 # Clone dotfiles
 mkdir ~/git
-mkdir ~/git/dotfiles
-git clone https://github.com/Netetra/dotfiles.git ~/git/dotfiles
+cd git
+git clone https://github.com/Netetra/dotfiles.git
+cd ~
 
 #Create SymbolicLink
 ln -s ~/git/dotfiles/.zshrc ~/.zshrc
