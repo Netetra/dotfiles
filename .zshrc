@@ -30,6 +30,7 @@ setopt hist_ignore_all_dups
 plugins=(
     zsh-autosuggestioms
     zsh-syntax-highlighting
+    zsh-completions
 )
 
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor)
