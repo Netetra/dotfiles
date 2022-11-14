@@ -1,13 +1,13 @@
 xwayland enable
 font pango:Noto Mono, Noto Sans Mono CJK JP, Noto Color Emoji, FontAwesome
 exec fcitx5
-exec ~/.apps/mako/build/mako
+exec ~/git/mako/build/mako
 exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
 
 set $mod Mod4
 
-#set $term ~/.cargo/bin/alacritty
-set $term foot
+set $term ~/.cargo/bin/alacritty
+#set $term foot
 
 set $menu wofi --show run | xargs swaymsg exec
 
@@ -19,6 +19,9 @@ bindsym $mod+d exec $menu
 floating_modifier $mod normal
 bindsym $mod+Shift+c reload
 bindsym $mod+Shift+e exec swaymsg exit
+
+bindsym $mod+f11 exec light -U 10
+bindsym $mod+f12 exec light -A 10
 
 bindsym $mod+Left focus left
 bindsym $mod+Down focus down

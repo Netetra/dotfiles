@@ -1,6 +1,13 @@
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
 
 if [ -r ~/.zshrc -a -r ~/.zshrc.global -a ! -r ~/.zshrc.local ] ; then
     printf '-!-\n'
@@ -13,13 +20,12 @@ if [ -r ~/.zshrc -a -r ~/.zshrc.global -a ! -r ~/.zshrc.local ] ; then
     printf '-!-\n'
 fi
 
-LANG=ja_JP.UTF-8
 HISTSIZE=1000
 SAVEHIST=10000
 SHELDON_CONFIG_DIR=/home/tetra/.sheldon
 SHELDON_DATA_DIR=/home/tetra/.sheldon
-
-export LANG HISTSIZE SAVEHIST SHELDON_CONFIG_DIR SHELDON_DATA_DIR
+PATH=$PATH:/home/tetra/.local/bin
+export PATH HISTSIZE SAVEHIST SHELDON_CONFIG_DIR SHELDON_DATA_DIR
 
 setopt print_eight_bit
 setopt correct
@@ -35,9 +41,18 @@ plugins=(
 
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor)
 
+LANG=en_US.UTF-8
+
 # start sway
 if [ -z $DISPLAY ] && [ $TTY = "/dev/tty1" ]; then
+    LANG=ja_JP.UTF-8
     exec sway
 fi
 
+if [[ $TTY == /dev/pts/* ]]; then
+     source ~/git/powerlevel10k/powerlevel10k.zsh-theme
+     [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+fi
+
+export LANG
 eval "$(sheldon source)"

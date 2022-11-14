@@ -1,0 +1,1 @@
+/home/tetra/.config/nvim/dein/repos/github.com/Shougo/deol.nvim/rplugin/python3/denite/source/deol/__init__.py

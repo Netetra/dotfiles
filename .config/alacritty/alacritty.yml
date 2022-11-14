@@ -1,5 +1,5 @@
 import:
-    - ~/.alacritty-colorscheme/themes/cyber_punk_neon.yaml
+    - ~/git/alacritty-theme/themes/material_theme_mod.yaml
 
 shell:
     program: /bin/zsh
@@ -27,3 +27,7 @@ window:
     startup_mode: Windowed
 
 live_config_reload: true
+
+key_bindings:
+    - { key: V, mods: Control, action: Paste }
+    - { key: C, mods: Control, action: Copy }

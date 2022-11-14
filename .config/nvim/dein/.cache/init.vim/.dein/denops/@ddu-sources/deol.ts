@@ -1,0 +1,1 @@
+/home/tetra/.config/nvim/dein/repos/github.com/Shougo/deol.nvim/denops/@ddu-sources/deol.ts

@@ -1,0 +1,1 @@
+/home/tetra/.config/nvim/dein/repos/github.com/Shougo/denite.nvim/doc/denite.txt

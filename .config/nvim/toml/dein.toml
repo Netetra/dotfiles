@@ -1,0 +1,14 @@
+[[plugins]]
+repo='Shougo/denite.nvim'
+
+[[plugins]]
+repo = 'Shougo/defx.nvim'
+
+[[plugins]]
+repo = "neoclide/coc.nvim"
+merge = 0
+rev = "release"
+
+[[plugins]]
+repo = "Shougo/deol.nvim"
+
