@@ -1,8 +1,8 @@
 # Clone dotfiles
-mkdir /home/$user_name/git
-cd /home/$user_name/git
+mkdir ~/git
+cd ~/git
 git clone https://github.com/Netetra/dotfiles.git
-cd /home/$user_name
+cd ~
 
 #Create SymbolicLink
 mkdir ~/.config
