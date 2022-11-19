@@ -49,7 +49,7 @@ if [ -z $DISPLAY ] && [ $TTY = "/dev/tty1" ]; then
     exec sway
 fi
 
-if [[ $TTY == /dev/pts/* ]]; then
+if [[ $TTY == /dev/pts/* ]] && [[ $TERM_PROGRAM != vscode ]] ; then
      source ~/git/powerlevel10k/powerlevel10k.zsh-theme
      [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 fi
