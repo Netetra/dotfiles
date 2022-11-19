@@ -1,1 +1,0 @@
-/home/tetra/.config/nvim/dein/repos/github.com/Shougo/denite.nvim/rplugin/python3/denite/filter/matcher/hide_hidden_files.py

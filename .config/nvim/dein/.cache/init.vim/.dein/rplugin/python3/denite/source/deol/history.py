@@ -1,1 +1,0 @@
-/home/tetra/.config/nvim/dein/repos/github.com/Shougo/deol.nvim/rplugin/python3/denite/source/deol/history.py
