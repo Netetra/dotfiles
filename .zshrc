@@ -41,18 +41,23 @@ plugins=(
 
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor)
 
-LANG=en_US.UTF-8
-
-# start sway
-if [ -z $DISPLAY ] && [ $TTY = "/dev/tty1" ]; then
-    LANG=ja_JP.UTF-8
-    exec sway
+if [ "$(uname)"='Darwin' ]; then
+    OS='Mac'
+elif [ "$(expr substr $(uname -s) 1 5)"='Linux' ]; then
+    OS='Linux'
 fi
 
-if [[ $TTY == /dev/pts/* ]] && [[ $TERM_PROGRAM != vscode ]] ; then
-     source ~/git/powerlevel10k/powerlevel10k.zsh-theme
-     [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+if [ $OS="Linux" ]; then
+    LANG=en_US.UTF-8
+    if [ -z $DISPLAY ] && [ $TTY = "/dev/tty1" ]; then
+        LANG=ja_JP.UTF-8
+        exec sway
+    fi
+    if [[ $TTY == /dev/pts/* ]] && [[ $TERM_PROGRAM != vscode ]] ; then
+        source ~/git/powerlevel10k/powerlevel10k.zsh-theme
+        [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+    fi
+    export LANG
 fi
 
-export LANG
 eval "$(sheldon source)"

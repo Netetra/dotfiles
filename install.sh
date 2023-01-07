@@ -1,16 +1,31 @@
-# Clone dotfiles
-mkdir ~/git
-cd ~/git
-git clone https://github.com/Netetra/dotfiles.git
-cd ~
+#!/bin/bash
+
+cd `dirname $0`
+
+dotfile_path=$(pwd)
+
+if [ "$(uname)"='Darwin' ]; then
+    OS='Mac'
+elif [ "$(expr substr $(uname -s) 1 5)"='Linux' ]; then
+    OS='Linux'
+else
+    echo "Your platform ($(uname -a)) is not supported."
+    exit 1
+fi
 
 #Create SymbolicLink
-mkdir ~/.config
-ln -sf ~/git/dotfiles/.zshrc ~/.zshrc
-ln -sf ~/git/dotfiles/.tmux.conf ~/.tmux.conf
-ln -sf ~/git/dotfiles/.config/sway ~/.config/sway
-ln -sf ~/git/dotfiles/.config/waybar ~/.config/waybar
-ln -sf ~/git/dotfiles/.config/alacritty ~/.config/alacritty
-ln -sf ~/git/dotfiles/.config/wofi ~/.config/wofi
-ln -sf ~/git/dotfiles/.background ~/.background
-ln -sf ~/git/dotfiles/.config/nvim ~/.config/nvim
+mkdir -p ~/.config
+ln -sf $dotfile_path/.zshrc ~/.zshrc
+ln -sf $dotfile_path/.tmux.conf ~/.tmux.conf
+ln -sf $dotfile_path/.config/alacritty ~/.config/alacritty
+
+if [ $OS = "Linux" ]; then
+    ln -sf $dotfile_path/.config/sway ~/.config/sway
+    ln -sf $dotfile_path/.config/waybar ~/.config/waybar
+    ln -sf $dotfile_path/.config/wofi ~/.config/wofi
+    ln -sf $dotfile_path/.background ~/.background
+fi
+
+if [ $OS = "Mac" ]; then
+    :
+fi
