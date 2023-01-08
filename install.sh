@@ -17,6 +17,7 @@ fi
 mkdir -p ~/.config
 ln -sf $dotfile_path/.zshrc ~/.zshrc
 ln -sf $dotfile_path/.tmux.conf ~/.tmux.conf
+ln -sf $dotfile_path/.config/sheldon ~/.config/sheldon
 ln -sf $dotfile_path/.config/alacritty ~/.config/alacritty
 
 if [ $OS = "Linux" ]; then

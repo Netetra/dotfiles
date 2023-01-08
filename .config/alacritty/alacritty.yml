@@ -1,16 +1,17 @@
 import:
     - ~/git/alacritty-theme/themes/material_theme_mod.yaml
 
+font:
+    size: 10
+env:
+    TERM: alacritty
+
 shell:
     program: /bin/zsh
     args:
         - -c
-        - "/usr/bin/tmux a -t 0 || /usr/bin/tmux"
-
-font:
-    size: 6
-env:
-    TERM: alacritty
+        - -l
+        - "$(which tmux) a -t 0 || $(which tmux)"
 
 mouse:
     hide_when_typing: false

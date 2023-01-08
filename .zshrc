@@ -22,8 +22,6 @@ fi
 
 HISTSIZE=1000
 SAVEHIST=10000
-SHELDON_CONFIG_DIR=/home/tetra/.sheldon
-SHELDON_DATA_DIR=/home/tetra/.sheldon
 PATH=$PATH:/home/tetra/.local/bin
 export PATH HISTSIZE SAVEHIST SHELDON_CONFIG_DIR SHELDON_DATA_DIR
 
@@ -32,12 +30,6 @@ setopt correct
 setopt share_history
 setopt hist_reduce_blanks
 setopt hist_ignore_all_dups
-
-plugins=(
-    zsh-autosuggestioms
-    zsh-syntax-highlighting
-    zsh-completions
-)
 
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor)
 
