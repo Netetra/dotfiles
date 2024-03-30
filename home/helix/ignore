@@ -1,6 +1,4 @@
-!.github
-!.gitignore
-!.env*
-!.dockerignore
-!.clippy.toml
-
+!**/.github
+!**/.gitignore
+!**/.env*
+!**/.dockerignore

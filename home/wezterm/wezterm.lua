@@ -19,7 +19,7 @@ config.use_ime = true
 config.hide_tab_bar_if_only_one_tab = true
 config.tab_bar_at_bottom = true
 
--- トキーバインド
+-- キーバインド
 -- config.disable_default_key_bindings = true
 
 config.keys = {
