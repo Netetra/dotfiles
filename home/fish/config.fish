@@ -7,6 +7,7 @@ set -g fish_prompt_pwd_dir_length 0
 set -x RUSTC_WRAPPER $(which sccache)
 
 alias hx="helix"
+
 # Python path
 fish_add_path $HOME/.local/bin
 fish_add_path $HOME/.cargo/bin

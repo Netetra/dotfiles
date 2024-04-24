@@ -2,3 +2,6 @@
 !**/.gitignore
 !**/.env*
 !**/.dockerignore
+!**/.clang*
+
+**/pico-sdk
