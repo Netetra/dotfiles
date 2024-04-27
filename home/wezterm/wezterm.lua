@@ -10,8 +10,12 @@ end
 config.color_scheme = "Monokai Dark (Gogh)"
 
 -- フォント
-config.font = wezterm.font 'Fira Code'
+config.font = wezterm.font_with_fallback({
+  "Fira Code",
+  "Noto Sans Mono CJK JP",
+})
 config.font_size = 16
+
 -- IMEの使用
 config.use_ime = true
 
