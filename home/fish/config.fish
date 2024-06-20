@@ -10,12 +10,12 @@ set -x RUSTC_WRAPPER $(which sccache)
 alias hx="helix"
 
 # Add path
-fish_add_path $HOME/.local/bin
-fish_add_path $HOME/.cargo/bin
+# fish_add_path $HOME/.local/bin
+# fish_add_path $HOME/.cargo/bin
 
 # pnpm
-set -gx PNPM_HOME "/home/netetra/.local/share/pnpm"
-if not string match -q -- $PNPM_HOME $PATH
-    set -gx PATH "$PNPM_HOME" $PATH
-end
+# set -gx PNPM_HOME "/home/netetra/.local/share/pnpm"
+# if not string match -q -- $PNPM_HOME $PATH
+#     set -gx PATH "$PNPM_HOME" $PATH
+# end
 # pnpm end

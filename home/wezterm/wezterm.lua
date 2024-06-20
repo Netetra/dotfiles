@@ -6,6 +6,9 @@ if wezterm.config_builder then
   config = wezterm.config_builder()
 end
 
+-- Wayland有効化
+config.enable_wayland = true
+
 -- テーマ
 config.color_scheme = "Monokai Dark (Gogh)"
 
@@ -14,7 +17,7 @@ config.font = wezterm.font_with_fallback({
   "Fira Code",
   "Noto Sans Mono CJK JP",
 })
-config.font_size = 16
+config.font_size = 20
 
 -- IMEの使用
 config.use_ime = true
