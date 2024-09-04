@@ -14,7 +14,7 @@ config.color_scheme = "Monokai Dark (Gogh)"
 
 -- フォント
 config.font = wezterm.font_with_fallback({
-  "Fira Code",
+  "FiraCode Nerd Font",
   "Noto Sans Mono CJK JP",
 })
 config.font_size = 20

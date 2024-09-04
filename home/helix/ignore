@@ -3,5 +3,6 @@
 !**/.env*
 !**/.dockerignore
 !**/.clang*
+!**/config.toml
 
 **/pico-sdk
