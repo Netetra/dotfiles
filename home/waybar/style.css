@@ -1,0 +1,76 @@
+* {
+    font-family: FontAwesome, Fira Code Nerd;
+    color: #f0c965;
+    border: none;
+    /* Border for debug */
+    /* border: 0.05rem solid rgb(0, 255, 0); */
+}
+
+window#waybar {
+    background-color: #353d42;
+}
+
+#tray {
+    border-radius: 8px;
+    background-color: #677176;
+    padding: 0.25rem 0.75rem;
+    margin: 0.5rem;
+}
+
+#custom-sep {
+    padding: 0;
+    margin: 0 0.5rem;
+}
+
+#network,
+#pulseaudio,
+#power-profiles-daemon,
+#clock,
+#battery {
+    padding: 0.5rem;
+    margin: 0.25rem;
+}
+
+label {
+    background-color: transparent;
+}
+
+#window {
+    margin: 0 1rem;
+}
+
+#workspaces {
+    margin: 0;
+}
+
+#workspaces button {
+    border: 0.05rem solid #677176;
+    border-radius: 8px;
+    margin: 0.25rem;
+    padding: 0 0.5rem;
+    background-color: transparent;
+}
+
+#workspaces button:hover {
+    background-color: #677176;
+}
+
+#workspaces button.focused {
+    background-color: #677176;
+}
+
+#workspaces button.urgent {
+    background-color: #eb4d4b;
+}
+
+#mode {
+    border: 0.05rem solid #677176;
+    border-radius: 8px;
+    margin: 0.25rem;
+    padding: 0 0.5rem;
+    background-color: #677176;
+}
+
+.modules-left > widget:first-child > #workspaces {
+    margin-left: 0.25rem;
+}

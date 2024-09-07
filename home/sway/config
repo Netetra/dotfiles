@@ -1,0 +1,9 @@
+include ./config.d/*
+
+output * bg ./wallpaper.jpg fill
+
+floating_modifier $mod normal
+
+bar {
+    swaybar_command waybar
+}

@@ -1,0 +1,97 @@
+{
+    "position": "top",
+    "height": 0,
+    "spacing": 0,
+    "modules-left": [
+        "sway/workspaces",
+        "sway/mode",
+        "sway/window",
+    ],
+    "modules-center": [
+        "clock",
+    ],
+    "modules-right": [
+        "power-profiles-daemon",
+        "pulseaudio",
+        "network",
+        "battery",
+        "tray",
+    ],
+    "sway/mode": {
+        "format": "<span style=\"italic\">{}</span>"
+    },
+    "tray": {
+        "spacing": 5
+    },
+    "clock": {
+        "format": "{:%Y / %m / %d / %H : %M}",
+        "tooltip-format": "{:%Y / %m / %d / %H : %M}",
+    },
+    "battery": {
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "Battery: {capacity}%",
+        "format-full": "Full {capacity}%",
+        "format-charging": "Charging: {capacity}%",
+        "format-plugged": "Plugged: {capacity}%",
+    },
+    "battery#bat2": {
+        "bat": "BAT2"
+    },
+    "power-profiles-daemon": {
+      "format": "{icon}",
+      "tooltip-format": "Driver: {driver}",
+      "tooltip": true,
+      "format-icons": {
+        "default": "Profile: Default",
+        "performance": "Profile: Power",
+        "balanced": "Profile: Balance",
+        "power-saver": "Profile:  Save"
+      }
+    },
+    "network": {
+        "format-wifi": "WiFi: {essid}",
+        "format-ethernet": "Ethernet: {ipaddr}/{cidr}",
+        "tooltip-format": "{ifname} via {gwaddr}",
+        "format-linked": "Device: {ifname} (No IP)",
+        "format-disconnected": "Disconnected",
+    },
+    "pulseaudio": {
+        "format": "{icon}: {volume}% {format_source}",
+        "format-muted": "{icon}: Muted {format_source}",
+        "format-bluetooth": "{icon} {volume}% {format_source}",
+        "format-bluetooth-muted": "{icon} Muted {format_source}",
+        "format-source": "Mic: {volume}%",
+        "format-source-muted": "Mic: Muted",
+        "format-icons": {
+            "headphone": "Headphone",
+            "hands-free": "Handsfree",
+            "headset": "Headset",
+            "phone": "Phone",
+            "portable": "Portable",
+            "car": "Car",
+            "default": "Speeker"
+        },
+        "on-click": "pavucontrol"
+    },
+    // "pulseaudio": {
+    //     "format": "{volume}% {icon} {format_source}",
+    //     "format-bluetooth": "{volume}% {icon} {format_source}",
+    //     "format-bluetooth-muted": " {icon} {format_source}",
+    //     "format-muted": " {format_source}",
+    //     "format-source": "{volume}% ",
+    //     "format-source-muted": "",
+    //     "format-icons": {
+    //         "headphone": "",
+    //         "hands-free": "",
+    //         "headset": "",
+    //         "phone": "",
+    //         "portable": "",
+    //         "car": "",
+    //         "default": ["", "", ""]
+    //     },
+    //     "on-click": "pavucontrol"
+    // },
+}

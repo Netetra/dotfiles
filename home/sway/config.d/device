@@ -1,0 +1,12 @@
+input type:keyboard {
+	xkb_options ctrl:nocaps
+}
+
+input type:touchpad {
+    tap disabled
+    natural_scroll enabled
+    accel_profile adaptive
+    pointer_accel 0
+    scroll_factor 0.3
+    click_method none
+}

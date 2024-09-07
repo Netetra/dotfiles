@@ -1,2 +1,3 @@
-/home/fish/functions/*
-!/home/fish/functions/cd.fish
+home/fish/functions/*
+home/fish/completions/*
+!home/fish/functions/cd.fish
