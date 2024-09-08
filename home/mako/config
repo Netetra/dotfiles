@@ -1,0 +1,10 @@
+default-timeout=10000
+
+# Style
+margin=8
+padding=16
+text-color=#f0c965
+background-color=#353d42
+border-size=1
+border-radius=8
+border-color=#677176

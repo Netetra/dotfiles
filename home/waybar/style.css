@@ -13,8 +13,8 @@ window#waybar {
 #tray {
     border-radius: 8px;
     background-color: #677176;
-    padding: 0.25rem 0.75rem;
-    margin: 0.5rem;
+    margin: 0.25rem;
+    padding: 0 0.75rem;
 }
 
 #custom-sep {
