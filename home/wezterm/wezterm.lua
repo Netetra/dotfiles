@@ -11,6 +11,7 @@ config.enable_wayland = true
 
 -- テーマ
 config.color_scheme = "Monokai Dark (Gogh)"
+config.window_background_opacity = 0.85
 
 -- フォント
 config.font = wezterm.font_with_fallback({
