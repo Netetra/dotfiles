@@ -17,7 +17,7 @@ config.font = wezterm.font_with_fallback({
   "FiraCode Nerd Font",
   "Noto Sans Mono CJK JP",
 })
-config.font_size = 14
+config.font_size = 16
 
 -- IMEの使用
 config.use_ime = true
