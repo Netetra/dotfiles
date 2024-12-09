@@ -1,72 +1,58 @@
-
-##### エディタ設定 #####
-
-# テーマ
-theme = "theme"
+theme = "monokai"
 
 [editor]
-shell = [ "/bin/fish", "-c"]
-true-color = true
-cursorline = true
-auto-completion = true
-auto-format = true
-auto-save = true
 mouse = false
+middle-click-paste = false
+shell = ["bash", "-c"]
+line-number = "relative"
+completion-timeout = 5
+completion-trigger-len = 1
+completion-replace = true
+true-color = true
+popup-border = "all"
+soft-wrap.enable = true
 
-# 画面に収まるように改行して表示する
-[editor.soft-wrap]
-enable = true
-
-# ステータスバー
 [editor.statusline]
-left = [ "mode", "spinner", "version-control" ]
-center = [ "file-name" ]
-right = [ "diagnostics", "selections", "position", "file-encoding", "file-line-ending" ]
-separator = ">"
-mode.normal = "NORMAL"
-mode.insert = "INSERT"
-mode.select = "SELECT"
+left = [ "mode", "spacer", "version-control", "spacer", "spinner" ]
+center = [ "file-modification-indicator", "file-name" ]
+right = [ "diagnostics", "read-only-indicator", "position", "file-encoding", "file-line-ending" ]
 
-# モードごとのカーソルの見た目
+[editor.lsp]
+display-messages = true
+display-inlay-hints = true # TODO
+
 [editor.cursor-shape]
 insert = "bar"
 normal = "block"
 select = "underline"
 
-# 空白文字の可視化
+[editor.file-picker]
+hidden = false
+
+[editor.auto-save]
+focus-lost = true
+after-delay.enable = true
+after-delay.timeout = 15000
+
 [editor.whitespace.render]
 space = "all"
 tab = "all"
-newline = "none"
+nbsp = "all"
+nnbsp = "all"
+newline = "all"
 
 [editor.whitespace.characters]
 space = " "
-tab = " "
+nbsp = "⍽"
+nnbsp = "␣"
+tab = "→"
+newline = "⏎"
+tabpad = "·"
 
 [editor.indent-guides]
 render = true
-character = "|"
-skip-levels = 2
+skip-levels = 1
 
-# Rustのライフタイム注釈のためにシングルクオートは補完しない
-[editor.auto-pairs]
-'(' = ')'
-'[' = ']'
-'{' = '}'
-'"' = '"'
-'<' = '>'
-'`' = '`'
-
-
-# LSPの設定
-[editor.lsp]
-display-messages = true
-display-inlay-hints = true
-
-
-########## キー設定 ##########
-
-##### NORMALモード #####
 [keys.normal]
 up = "no_op"
 down = "no_op"
@@ -77,13 +63,6 @@ pagedown = "no_op"
 home = "no_op"
 end = "no_op"
 
-# モード切替
-";" = "command_mode"
-
-
-
-
-##### INSERTモード #####
 [keys.insert]
 up = "no_op"
 down = "no_op"

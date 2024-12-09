@@ -1,8 +1,1 @@
-!**/.github
-!**/.gitignore
-!**/.env*
-!**/.dockerignore
-!**/.clang*
-!**/config.toml
-
-**/pico-sdk
+node_modules/

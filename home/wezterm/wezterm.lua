@@ -10,11 +10,11 @@ end
 config.enable_wayland = true
 
 -- テーマ
-config.color_scheme = "Monokai Dark (Gogh)"
-config.window_background_opacity = 0.85
+config.color_scheme = "Molokai"
 
 -- フォント
 config.font = wezterm.font_with_fallback({
+  -- "Utatane",
   "FiraCode Nerd Font",
   "Noto Sans Mono CJK JP",
 })
@@ -32,7 +32,7 @@ config.tab_bar_at_bottom = true
 
 config.keys = {
   {
-    key = "c",
+    key = "b",
     mods = "ALT",
     action = wezterm.action.SplitHorizontal { domain = "CurrentPaneDomain" },
   },{

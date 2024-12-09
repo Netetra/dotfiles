@@ -2,7 +2,6 @@ inherits = "monokai"
 
 # LSP Inlay-hints style
 "ui.virtual.inlay-hint" = { fg = "inlay_hints" }
-"ui.background"  = {}
 
 [palette]
 type = "#A6E22E"
