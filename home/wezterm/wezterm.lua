@@ -10,7 +10,7 @@ end
 config.enable_wayland = true
 
 -- テーマ
-config.color_scheme = "Molokai"
+config.color_scheme = "Monokai Dark (Gogh)"
 
 -- フォント
 config.font = wezterm.font_with_fallback({

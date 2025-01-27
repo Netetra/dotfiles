@@ -11,6 +11,10 @@ completion-replace = true
 true-color = true
 popup-border = "all"
 soft-wrap.enable = true
+end-of-line-diagnostics = "hint"
+
+[editor.inline-diagnostics]
+cursor-line = "error"
 
 [editor.statusline]
 left = [ "mode", "spacer", "version-control", "spacer", "spinner" ]
