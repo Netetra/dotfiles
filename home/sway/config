@@ -1,6 +1,6 @@
 include ./config.d/*
 
-output * bg ./wallpaper.jpg fill
+output * bg ./wallpaper.png fill
 
 floating_modifier $mod normal
 
