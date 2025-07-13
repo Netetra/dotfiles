@@ -23,7 +23,7 @@ right = [ "diagnostics", "read-only-indicator", "position", "file-encoding", "fi
 
 [editor.lsp]
 display-messages = true
-display-inlay-hints = true # TODO
+display-inlay-hints = false
 
 [editor.cursor-shape]
 insert = "bar"
