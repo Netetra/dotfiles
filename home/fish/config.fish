@@ -6,12 +6,12 @@ set -g theme_display_git_ahead_verbose yes
 set -g fish_prompt_pwd_dir_length 0
 set -x RUSTC_WRAPPER $(which sccache)
 
-
 # Alias
 alias hx="helix"
+alias ls="eza --icons always --git --time-style relative"
 
 # Add path
-# fish_add_path $HOME/.local/bin
+fish_add_path $HOME/.local/bin
 # fish_add_path $HOME/.cargo/bin
 fish_add_path $HOME/.rustup/toolchains/esp/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin
 set -x LIBCLANG_PATH $HOME/.rustup/toolchains/esp/xtensa-esp32-elf-clang/esp-18.1.2_20240912/esp-clang/lib
@@ -22,3 +22,5 @@ set -x LIBCLANG_PATH $HOME/.rustup/toolchains/esp/xtensa-esp32-elf-clang/esp-18.
 #     set -gx PATH "$PNPM_HOME" $PATH
 # end
 # pnpm end
+
+pyenv init - fish | source

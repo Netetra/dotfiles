@@ -20,3 +20,4 @@ create_link "$(pwd)"/home/waybar /home/"$USER"/.config/waybar
 # create_link "$(pwd)"/home/rofi /home/"$USER"/.config/rofi
 create_link "$(pwd)"/home/fuzzel /home/"$USER"/.config/fuzzel
 create_link "$(pwd)"/home/mako /home/"$USER"/.config/mako
+create_link "$(pwd)"/home/FreeCAD /home/"$USER"/.config/FreeCAD
