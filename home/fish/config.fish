@@ -22,5 +22,3 @@ set -x LIBCLANG_PATH $HOME/.rustup/toolchains/esp/xtensa-esp32-elf-clang/esp-18.
 #     set -gx PATH "$PNPM_HOME" $PATH
 # end
 # pnpm end
-
-pyenv init - fish | source
