@@ -7,7 +7,7 @@ if wezterm.config_builder then
 end
 
 -- Wayland有効化
-config.enable_wayland = true
+config.enable_wayland = false
 
 -- テーマ
 config.color_scheme = "Monokai Dark (Gogh)"
