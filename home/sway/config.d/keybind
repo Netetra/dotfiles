@@ -6,7 +6,7 @@ set $up k
 set $right l
 
 set $term wezterm
-set $menu fuzzel
+set $menu wofi
 
 bindsym XF86MonBrightnessDown exec brightnessctl set 1%-
 bindsym XF86MonBrightnessUp exec brightnessctl set 1%+

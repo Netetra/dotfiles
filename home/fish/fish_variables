@@ -1,8 +1,3 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
-SETUVAR --export PYENV_ROOT:/home/netetra/\x2epyenv
-SETUVAR __fish_initialized:4300
-SETUVAR _fisher_oh_2D_my_2D_fish_2F_theme_2D_bobthefish_files:\x7e/\x2econfig/fish/functions/__bobthefish_colors\x2efish\x1e\x7e/\x2econfig/fish/functions/__bobthefish_display_colors\x2efish\x1e\x7e/\x2econfig/fish/functions/__bobthefish_glyphs\x2efish\x1e\x7e/\x2econfig/fish/functions/bobthefish_display_colors\x2efish\x1e\x7e/\x2econfig/fish/functions/fish_greeting\x2efish\x1e\x7e/\x2econfig/fish/functions/fish_mode_prompt\x2efish\x1e\x7e/\x2econfig/fish/functions/fish_prompt\x2efish\x1e\x7e/\x2econfig/fish/functions/fish_right_prompt\x2efish\x1e\x7e/\x2econfig/fish/functions/fish_title\x2efish
-SETUVAR _fisher_plugins:oh\x2dmy\x2dfish/theme\x2dbobthefish
-SETUVAR _fisher_upgraded_to_4_4:\x1d
-SETUVAR fish_user_paths:/home/netetra/\x2elocal/bin\x1e/home/netetra/\x2epyenv/shims\x1e/home/netetra/\x2epyenv/bin\x1e/home/netetra/\x2erustup/toolchains/esp/xtensa\x2desp\x2delf/esp\x2d14\x2e2\x2e0_20240906/xtensa\x2desp\x2delf/bin\x1e/home/netetra/\x2ecargo/bin
+SETUVAR __fish_webconfig_theme_notification:set\x2dtheme\x2dv1\x2d\x233

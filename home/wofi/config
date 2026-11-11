@@ -1,0 +1,21 @@
+# Drunモード
+show=drun
+
+# 曖昧検索
+matching=fuzzy
+
+# 大文字小文字を区別しない
+insensitive=true
+
+# フォーカスが外れたときに閉じる
+close_on_focus_loss=true
+
+# プロンプト文字列
+prompt=search
+
+# 左上に表示
+location=1
+
+# サイズ調整
+width=20%
+height=30%

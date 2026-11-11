@@ -1,0 +1,57 @@
+* {
+  font-family: FontAwesome, Fira Code Nerd;
+  margin: 0;
+  padding: 0;
+}
+
+#window {
+  background-color: #353d42;
+  border: 0.05rem solid #677176;
+  /* border-radius: 8px; */
+}
+
+#outer-box {
+  margin: 1rem;
+}
+
+#input {
+  margin: 0.25rem;
+  padding: 0 0.5rem;
+  border: 0.05rem solid #677176;
+}
+
+#input:focus {
+  border: 0.05rem solid #677176;
+}
+
+#input image {
+  padding: 0 0.5rem 0 0;
+}
+
+#scroll {
+  padding: 0 1rem;
+}
+
+#inner-box {
+  margin: 0.5rem 0;
+}
+
+#entry {
+  color: #f0c965;
+  border-radius: 4px;
+  margin: 0.25rem;
+  padding: 0.25rem 0.5rem;
+  border-bottom: 0.05rem solid #677176;
+  background-color: transparent;
+}
+
+#entry:selected {
+  background-color: #677176;
+}
+
+/* #text {} */
+/* #expander-box {} */
+/* #img {} */
+/* #unselected {} */
+/* #selected {} */
+/* .entry {} */

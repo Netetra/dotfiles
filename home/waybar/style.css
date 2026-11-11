@@ -8,6 +8,7 @@
 
 window#waybar {
   background-color: #353d42;
+  border-bottom: 0.05rem solid #677176;
 }
 
 #tray {
