@@ -1,4 +1,6 @@
 default-timeout=10000
+max-visible=-1
+progress-color=over #677176
 
 # Style
 margin=8

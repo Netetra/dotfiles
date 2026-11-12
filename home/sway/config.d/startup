@@ -1,3 +1,4 @@
 exec fcitx5 -d
 exec mako
 exec easyeffects --hide-window --service-mode
+exec systemctl --user import-environment WAYLAND_DISPLAY SWAYSOCK

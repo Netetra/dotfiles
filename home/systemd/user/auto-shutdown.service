@@ -1,0 +1,11 @@
+[Unit]
+Description=Automatic shutdown
+After=default.target
+
+[Service]
+Type=simple
+ExecStart=%h/.local/bin/auto-shutdown.py
+Restart=no
+
+[Install]
+WantedBy=default.target

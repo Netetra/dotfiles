@@ -8,7 +8,7 @@ matching=fuzzy
 insensitive=true
 
 # フォーカスが外れたときに閉じる
-close_on_focus_loss=true
+# close_on_focus_loss=true
 
 # プロンプト文字列
 prompt=search
